@@ -8,20 +8,19 @@
 	<title>Wikipedia viewer - FCC Project</title>
 
 <!-- 
-<link rel='stylesheet prefetch' href='css/bootstrap.min.css'>
+así no me funcionaba: 
+<link rel="stylesheet" type="text/css" href="css/boostrap.min.css">
 -->
+
+
+<link rel='stylesheet prefetch' href='css/bootstrap.min.css'>
 
 <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
-<!--
-<link rel="stylesheet" href="css/font-awesome.min.css"/>
 
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<!--
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 -->
-
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-
 
 <style type="text/css">
 	.fondo-verde {
@@ -66,17 +65,14 @@ otra clase posible sería container-fluid, que no le pone ese padding
 		<p class="text-success">Cliquea la lupa para buscar</p>
 	</div>
 
-<div id="resultados"></div>
+	<div class="well" id="resultados"></div>
 
 </div>
 
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-<script src="wiki-viewer.js"></script> 
-<!-- 
+<!-- ¿Por qué ubicar estos scripts al final del documento? -->
+<!-- Siempre poner el jquery antes que el otro -->
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
-Siempre poner el jquery antes que el otro -->
+<script src="wiki-viewer.js"></script> 
 </body>
 </html>
