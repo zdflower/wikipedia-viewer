@@ -1,6 +1,3 @@
-/*
-acá tiene que ir código para que al clickear la lupa se reemplace por un formulario donde ingresar un texto que va a estar conectado con la api de wikipedia
-*/
 $('#buscadorInput').on('keyup', function buscar(event){
 		var aBuscar = $('#buscadorInput').val();
 		console.log("Quiere buscar: " + aBuscar);
@@ -8,10 +5,9 @@ $('#buscadorInput').on('keyup', function buscar(event){
 		$(this).css("color", event.which === 13 ? '#fff': "#2E2D88");
 		if (event.which === 13){
 			console.log("apretó enter");
-			$('#resultados').html("<p> Resultados obtenidos: " + aBuscar + "</p>");
-			//$('#resultados').css("background-color", "#2E2D88");
-			//$('#resultados').css("color", "white");
-			//alert("enter");
+			$('#resultados').html("<p> Resultados obtenidos para " + aBuscar + ":</p>");
+			$('#resultados').css("background-color", "#2E2D88");
+			$('#resultados').css("color", "white");
 		} else {
 			console.log("no apretó enter");
 		}
